@@ -1,0 +1,2452 @@
+robots:
+  '0':
+    location:
+      x: 4198
+      y: 5106
+    release: 8881
+    speed: 1
+    status: 'on'
+  '1':
+    location:
+      x: 617
+      y: 1713
+    release: 503
+    speed: 1
+    status: 'off'
+  '10':
+    location:
+      x: 3147
+      y: 2599
+    release: 1502
+    speed: 1
+    status: 'off'
+  '100':
+    location:
+      x: 920
+      y: 4463
+    release: 3598
+    speed: 1
+    status: 'off'
+  '101':
+    location:
+      x: 2474
+      y: 4150
+    release: 443
+    speed: 1
+    status: 'off'
+  '102':
+    location:
+      x: 7272
+      y: 4584
+    release: 724
+    speed: 1
+    status: 'off'
+  '103':
+    location:
+      x: 3808
+      y: 5417
+    release: 715
+    speed: 1
+    status: 'off'
+  '104':
+    location:
+      x: 1563
+      y: 3006
+    release: 2108
+    speed: 1
+    status: 'off'
+  '105':
+    location:
+      x: 2240
+      y: 8779
+    release: 439
+    speed: 1
+    status: 'off'
+  '106':
+    location:
+      x: 6020
+      y: 7397
+    release: 894
+    speed: 1
+    status: 'off'
+  '107':
+    location:
+      x: 8779
+      y: 7949
+    release: 4211
+    speed: 1
+    status: 'off'
+  '108':
+    location:
+      x: 3239
+      y: 3529
+    release: 3749
+    speed: 1
+    status: 'off'
+  '109':
+    location:
+      x: 3298
+      y: 7318
+    release: 1879
+    speed: 1
+    status: 'off'
+  '11':
+    location:
+      x: 7044
+      y: 2122
+    release: 2359
+    speed: 1
+    status: 'off'
+  '110':
+    location:
+      x: 3450
+      y: 9441
+    release: 4399
+    speed: 1
+    status: 'off'
+  '111':
+    location:
+      x: 1849
+      y: 8670
+    release: 1666
+    speed: 1
+    status: 'off'
+  '112':
+    location:
+      x: 8596
+      y: 4320
+    release: 3739
+    speed: 1
+    status: 'off'
+  '113':
+    location:
+      x: 6041
+      y: 4511
+    release: 2128
+    speed: 1
+    status: 'off'
+  '114':
+    location:
+      x: 4333
+      y: 5611
+    release: 146
+    speed: 1
+    status: 'off'
+  '115':
+    location:
+      x: 9182
+      y: 5760
+    release: 1652
+    speed: 1
+    status: 'off'
+  '116':
+    location:
+      x: 9085
+      y: 6094
+    release: 3058
+    speed: 1
+    status: 'off'
+  '117':
+    location:
+      x: 4994
+      y: 3794
+    release: 196
+    speed: 1
+    status: 'off'
+  '118':
+    location:
+      x: 4630
+      y: 1091
+    release: 1037
+    speed: 1
+    status: 'off'
+  '119':
+    location:
+      x: 4401
+      y: 7698
+    release: 2568
+    speed: 1
+    status: 'off'
+  '12':
+    location:
+      x: 6568
+      y: 3672
+    release: 2963
+    speed: 1
+    status: 'off'
+  '120':
+    location:
+      x: 6338
+      y: 1607
+    release: 3466
+    speed: 1
+    status: 'off'
+  '121':
+    location:
+      x: 301
+      y: 384
+    release: 3032
+    speed: 1
+    status: 'off'
+  '122':
+    location:
+      x: 3018
+      y: 9390
+    release: 3351
+    speed: 1
+    status: 'off'
+  '123':
+    location:
+      x: 5884
+      y: 9153
+    release: 2326
+    speed: 1
+    status: 'off'
+  '124':
+    location:
+      x: 3418
+      y: 8901
+    release: 4256
+    speed: 1
+    status: 'off'
+  '125':
+    location:
+      x: 7093
+      y: 7998
+    release: 3377
+    speed: 1
+    status: 'off'
+  '126':
+    location:
+      x: 8257
+      y: 8036
+    release: 2610
+    speed: 1
+    status: 'off'
+  '127':
+    location:
+      x: 2574
+      y: 2926
+    release: 4480
+    speed: 1
+    status: 'off'
+  '128':
+    location:
+      x: 7060
+      y: 851
+    release: 760
+    speed: 1
+    status: 'off'
+  '129':
+    location:
+      x: 1565
+      y: 8023
+    release: 3409
+    speed: 1
+    status: 'off'
+  '13':
+    location:
+      x: 2020
+      y: 4918
+    release: 3699
+    speed: 1
+    status: 'off'
+  '130':
+    location:
+      x: 391
+      y: 642
+    release: 944
+    speed: 1
+    status: 'off'
+  '131':
+    location:
+      x: 6835
+      y: 1656
+    release: 2469
+    speed: 1
+    status: 'off'
+  '132':
+    location:
+      x: 4740
+      y: 8699
+    release: 4276
+    speed: 1
+    status: 'off'
+  '133':
+    location:
+      x: 8516
+      y: 4645
+    release: 234
+    speed: 1
+    status: 'off'
+  '134':
+    location:
+      x: 9326
+      y: 9524
+    release: 2535
+    speed: 1
+    status: 'off'
+  '135':
+    location:
+      x: 4282
+      y: 2655
+    release: 626
+    speed: 1
+    status: 'off'
+  '136':
+    location:
+      x: 8441
+      y: 4494
+    release: 4300
+    speed: 1
+    status: 'off'
+  '137':
+    location:
+      x: 7831
+      y: 6494
+    release: 4563
+    speed: 1
+    status: 'off'
+  '138':
+    location:
+      x: 5054
+      y: 2214
+    release: 3653
+    speed: 1
+    status: 'off'
+  '139':
+    location:
+      x: 4546
+      y: 8460
+    release: 878
+    speed: 1
+    status: 'off'
+  '14':
+    location:
+      x: 5421
+      y: 1379
+    release: 3603
+    speed: 1
+    status: 'off'
+  '140':
+    location:
+      x: 1296
+      y: 497
+    release: 1623
+    speed: 1
+    status: 'off'
+  '141':
+    location:
+      x: 5970
+      y: 1878
+    release: 2226
+    speed: 1
+    status: 'off'
+  '142':
+    location:
+      x: 7253
+      y: 1554
+    release: 3902
+    speed: 1
+    status: 'off'
+  '143':
+    location:
+      x: 8157
+      y: 5146
+    release: 1373
+    speed: 1
+    status: 'off'
+  '144':
+    location:
+      x: 2453
+      y: 2333
+    release: 3579
+    speed: 1
+    status: 'off'
+  '145':
+    location:
+      x: 3758
+      y: 5994
+    release: 4447
+    speed: 1
+    status: 'off'
+  '146':
+    location:
+      x: 4835
+      y: 2096
+    release: 806
+    speed: 1
+    status: 'off'
+  '147':
+    location:
+      x: 5134
+      y: 2449
+    release: 3954
+    speed: 1
+    status: 'off'
+  '148':
+    location:
+      x: 8801
+      y: 5156
+    release: 3208
+    speed: 1
+    status: 'off'
+  '149':
+    location:
+      x: 4571
+      y: 6163
+    release: 2747
+    speed: 1
+    status: 'off'
+  '15':
+    location:
+      x: 2475
+      y: 5152
+    release: 4288
+    speed: 1
+    status: 'off'
+  '150':
+    location:
+      x: 188
+      y: 2964
+    release: 629
+    speed: 1
+    status: 'off'
+  '151':
+    location:
+      x: 34
+      y: 482
+    release: 1833
+    speed: 1
+    status: 'off'
+  '152':
+    location:
+      x: 11
+      y: 1221
+    release: 3853
+    speed: 1
+    status: 'off'
+  '153':
+    location:
+      x: 9797
+      y: 908
+    release: 4396
+    speed: 1
+    status: 'off'
+  '154':
+    location:
+      x: 256
+      y: 4427
+    release: 4908
+    speed: 1
+    status: 'off'
+  '155':
+    location:
+      x: 450
+      y: 1443
+    release: 3308
+    speed: 1
+    status: 'off'
+  '156':
+    location:
+      x: 6071
+      y: 8484
+    release: 662
+    speed: 1
+    status: 'off'
+  '157':
+    location:
+      x: 3453
+      y: 2374
+    release: 4490
+    speed: 1
+    status: 'off'
+  '158':
+    location:
+      x: 1933
+      y: 9343
+    release: 1336
+    speed: 1
+    status: 'off'
+  '159':
+    location:
+      x: 7136
+      y: 963
+    release: 2920
+    speed: 1
+    status: 'off'
+  '16':
+    location:
+      x: 9881
+      y: 4444
+    release: 224
+    speed: 1
+    status: 'off'
+  '160':
+    location:
+      x: 7560
+      y: 9373
+    release: 2637
+    speed: 1
+    status: 'off'
+  '161':
+    location:
+      x: 848
+      y: 6415
+    release: 3723
+    speed: 1
+    status: 'off'
+  '162':
+    location:
+      x: 4311
+      y: 8127
+    release: 2815
+    speed: 1
+    status: 'off'
+  '163':
+    location:
+      x: 5524
+      y: 7979
+    release: 4574
+    speed: 1
+    status: 'off'
+  '164':
+    location:
+      x: 412
+      y: 3058
+    release: 0
+    speed: 1
+    status: 'off'
+  '165':
+    location:
+      x: 8720
+      y: 2901
+    release: 4455
+    speed: 1
+    status: 'off'
+  '166':
+    location:
+      x: 7898
+      y: 8402
+    release: 4928
+    speed: 1
+    status: 'off'
+  '167':
+    location:
+      x: 6721
+      y: 997
+    release: 4103
+    speed: 1
+    status: 'off'
+  '168':
+    location:
+      x: 1169
+      y: 6376
+    release: 2313
+    speed: 1
+    status: 'off'
+  '169':
+    location:
+      x: 5272
+      y: 8892
+    release: 463
+    speed: 1
+    status: 'off'
+  '17':
+    location:
+      x: 9023
+      y: 7447
+    release: 4401
+    speed: 1
+    status: 'off'
+  '170':
+    location:
+      x: 1607
+      y: 8034
+    release: 3795
+    speed: 1
+    status: 'off'
+  '171':
+    location:
+      x: 2833
+      y: 7893
+    release: 3944
+    speed: 1
+    status: 'off'
+  '172':
+    location:
+      x: 7197
+      y: 3004
+    release: 1227
+    speed: 1
+    status: 'off'
+  '173':
+    location:
+      x: 6264
+      y: 7085
+    release: 2311
+    speed: 1
+    status: 'off'
+  '174':
+    location:
+      x: 4202
+      y: 5786
+    release: 2489
+    speed: 1
+    status: 'off'
+  '175':
+    location:
+      x: 2153
+      y: 4623
+    release: 1783
+    speed: 1
+    status: 'off'
+  '176':
+    location:
+      x: 4870
+      y: 7919
+    release: 2116
+    speed: 1
+    status: 'off'
+  '177':
+    location:
+      x: 9922
+      y: 4598
+    release: 4049
+    speed: 1
+    status: 'off'
+  '178':
+    location:
+      x: 3256
+      y: 3302
+    release: 3615
+    speed: 1
+    status: 'off'
+  '179':
+    location:
+      x: 8897
+      y: 8144
+    release: 2875
+    speed: 1
+    status: 'off'
+  '18':
+    location:
+      x: 3114
+      y: 7787
+    release: 4653
+    speed: 1
+    status: 'off'
+  '180':
+    location:
+      x: 1361
+      y: 8151
+    release: 2887
+    speed: 1
+    status: 'off'
+  '181':
+    location:
+      x: 3152
+      y: 2675
+    release: 1743
+    speed: 1
+    status: 'off'
+  '182':
+    location:
+      x: 4085
+      y: 4214
+    release: 4093
+    speed: 1
+    status: 'off'
+  '183':
+    location:
+      x: 9394
+      y: 9514
+    release: 3118
+    speed: 1
+    status: 'off'
+  '184':
+    location:
+      x: 5175
+      y: 7824
+    release: 4506
+    speed: 1
+    status: 'off'
+  '185':
+    location:
+      x: 9308
+      y: 5215
+    release: 1473
+    speed: 1
+    status: 'off'
+  '186':
+    location:
+      x: 8219
+      y: 3368
+    release: 1074
+    speed: 1
+    status: 'off'
+  '187':
+    location:
+      x: 2289
+      y: 4034
+    release: 298
+    speed: 1
+    status: 'off'
+  '188':
+    location:
+      x: 1334
+      y: 5665
+    release: 880
+    speed: 1
+    status: 'off'
+  '189':
+    location:
+      x: 3633
+      y: 124
+    release: 2035
+    speed: 1
+    status: 'off'
+  '19':
+    location:
+      x: 4604
+      y: 3689
+    release: 3704
+    speed: 1
+    status: 'off'
+  '190':
+    location:
+      x: 9351
+      y: 7572
+    release: 3553
+    speed: 1
+    status: 'off'
+  '191':
+    location:
+      x: 1655
+      y: 1379
+    release: 2569
+    speed: 1
+    status: 'off'
+  '192':
+    location:
+      x: 6749
+      y: 2576
+    release: 47
+    speed: 1
+    status: 'off'
+  '193':
+    location:
+      x: 1043
+      y: 9949
+    release: 3209
+    speed: 1
+    status: 'off'
+  '194':
+    location:
+      x: 133
+      y: 9017
+    release: 266
+    speed: 1
+    status: 'off'
+  '195':
+    location:
+      x: 3048
+      y: 6427
+    release: 2484
+    speed: 1
+    status: 'off'
+  '196':
+    location:
+      x: 8591
+      y: 4580
+    release: 2251
+    speed: 1
+    status: 'off'
+  '197':
+    location:
+      x: 3054
+      y: 9272
+    release: 1127
+    speed: 1
+    status: 'off'
+  '198':
+    location:
+      x: 1484
+      y: 3940
+    release: 2853
+    speed: 1
+    status: 'off'
+  '199':
+    location:
+      x: 9283
+      y: 1401
+    release: 4183
+    speed: 1
+    status: 'off'
+  '2':
+    location:
+      x: 8438
+      y: 7585
+    release: 1227
+    speed: 1
+    status: 'off'
+  '20':
+    location:
+      x: 8682
+      y: 8809
+    release: 2286
+    speed: 1
+    status: 'off'
+  '200':
+    location:
+      x: 9140
+      y: 7961
+    release: 4007
+    speed: 1
+    status: 'off'
+  '201':
+    location:
+      x: 193
+      y: 944
+    release: 1153
+    speed: 1
+    status: 'off'
+  '202':
+    location:
+      x: 5675
+      y: 6855
+    release: 448
+    speed: 1
+    status: 'off'
+  '203':
+    location:
+      x: 9992
+      y: 6028
+    release: 866
+    speed: 1
+    status: 'off'
+  '204':
+    location:
+      x: 4569
+      y: 5552
+    release: 2936
+    speed: 1
+    status: 'off'
+  '205':
+    location:
+      x: 3692
+      y: 4894
+    release: 4712
+    speed: 1
+    status: 'off'
+  '206':
+    location:
+      x: 6403
+      y: 7788
+    release: 3408
+    speed: 1
+    status: 'off'
+  '207':
+    location:
+      x: 1300
+      y: 2083
+    release: 3334
+    speed: 1
+    status: 'off'
+  '208':
+    location:
+      x: 7274
+      y: 2407
+    release: 1996
+    speed: 1
+    status: 'off'
+  '209':
+    location:
+      x: 6643
+      y: 1561
+    release: 2110
+    speed: 1
+    status: 'off'
+  '21':
+    location:
+      x: 8821
+      y: 3561
+    release: 969
+    speed: 1
+    status: 'off'
+  '210':
+    location:
+      x: 7604
+      y: 9722
+    release: 3311
+    speed: 1
+    status: 'off'
+  '211':
+    location:
+      x: 8357
+      y: 6455
+    release: 1454
+    speed: 1
+    status: 'off'
+  '212':
+    location:
+      x: 455
+      y: 3889
+    release: 2133
+    speed: 1
+    status: 'off'
+  '213':
+    location:
+      x: 7717
+      y: 3736
+    release: 874
+    speed: 1
+    status: 'off'
+  '214':
+    location:
+      x: 8625
+      y: 8471
+    release: 4136
+    speed: 1
+    status: 'off'
+  '215':
+    location:
+      x: 862
+      y: 6458
+    release: 2521
+    speed: 1
+    status: 'off'
+  '216':
+    location:
+      x: 6416
+      y: 7461
+    release: 3990
+    speed: 1
+    status: 'off'
+  '217':
+    location:
+      x: 5626
+      y: 5489
+    release: 4421
+    speed: 1
+    status: 'off'
+  '218':
+    location:
+      x: 3337
+      y: 8635
+    release: 2493
+    speed: 1
+    status: 'off'
+  '219':
+    location:
+      x: 6292
+      y: 9405
+    release: 1970
+    speed: 1
+    status: 'off'
+  '22':
+    location:
+      x: 545
+      y: 7161
+    release: 324
+    speed: 1
+    status: 'off'
+  '220':
+    location:
+      x: 7506
+      y: 5945
+    release: 3014
+    speed: 1
+    status: 'off'
+  '221':
+    location:
+      x: 3953
+      y: 8472
+    release: 629
+    speed: 1
+    status: 'off'
+  '222':
+    location:
+      x: 2031
+      y: 2661
+    release: 2404
+    speed: 1
+    status: 'off'
+  '223':
+    location:
+      x: 2381
+      y: 6927
+    release: 3008
+    speed: 1
+    status: 'off'
+  '224':
+    location:
+      x: 3624
+      y: 2589
+    release: 3995
+    speed: 1
+    status: 'off'
+  '225':
+    location:
+      x: 3856
+      y: 3509
+    release: 4197
+    speed: 1
+    status: 'off'
+  '226':
+    location:
+      x: 140
+      y: 3474
+    release: 3643
+    speed: 1
+    status: 'off'
+  '227':
+    location:
+      x: 3047
+      y: 5024
+    release: 4611
+    speed: 1
+    status: 'off'
+  '228':
+    location:
+      x: 7145
+      y: 5636
+    release: 4
+    speed: 1
+    status: 'off'
+  '229':
+    location:
+      x: 3499
+      y: 7406
+    release: 4983
+    speed: 1
+    status: 'off'
+  '23':
+    location:
+      x: 6596
+      y: 4546
+    release: 806
+    speed: 1
+    status: 'off'
+  '230':
+    location:
+      x: 6624
+      y: 2580
+    release: 1077
+    speed: 1
+    status: 'off'
+  '231':
+    location:
+      x: 2975
+      y: 8517
+    release: 3604
+    speed: 1
+    status: 'off'
+  '232':
+    location:
+      x: 2576
+      y: 3058
+    release: 3974
+    speed: 1
+    status: 'off'
+  '233':
+    location:
+      x: 4283
+      y: 363
+    release: 1754
+    speed: 1
+    status: 'off'
+  '234':
+    location:
+      x: 4470
+      y: 2817
+    release: 3785
+    speed: 1
+    status: 'off'
+  '235':
+    location:
+      x: 2139
+      y: 4895
+    release: 3805
+    speed: 1
+    status: 'off'
+  '236':
+    location:
+      x: 5761
+      y: 6509
+    release: 3461
+    speed: 1
+    status: 'off'
+  '237':
+    location:
+      x: 3459
+      y: 7529
+    release: 3398
+    speed: 1
+    status: 'off'
+  '238':
+    location:
+      x: 8915
+      y: 8163
+    release: 4194
+    speed: 1
+    status: 'off'
+  '239':
+    location:
+      x: 7248
+      y: 1302
+    release: 85
+    speed: 1
+    status: 'off'
+  '24':
+    location:
+      x: 9329
+      y: 3308
+    release: 1592
+    speed: 1
+    status: 'off'
+  '240':
+    location:
+      x: 3496
+      y: 7266
+    release: 1989
+    speed: 1
+    status: 'off'
+  '241':
+    location:
+      x: 1323
+      y: 8850
+    release: 2792
+    speed: 1
+    status: 'off'
+  '242':
+    location:
+      x: 1158
+      y: 7204
+    release: 4454
+    speed: 1
+    status: 'off'
+  '243':
+    location:
+      x: 1483
+      y: 4283
+    release: 3373
+    speed: 1
+    status: 'off'
+  '244':
+    location:
+      x: 2905
+      y: 6899
+    release: 4221
+    speed: 1
+    status: 'off'
+  '245':
+    location:
+      x: 5822
+      y: 8895
+    release: 986
+    speed: 1
+    status: 'off'
+  '246':
+    location:
+      x: 4628
+      y: 9109
+    release: 772
+    speed: 1
+    status: 'off'
+  '247':
+    location:
+      x: 903
+      y: 5774
+    release: 3889
+    speed: 1
+    status: 'off'
+  '248':
+    location:
+      x: 9576
+      y: 4556
+    release: 4306
+    speed: 1
+    status: 'off'
+  '249':
+    location:
+      x: 3449
+      y: 4550
+    release: 2198
+    speed: 1
+    status: 'off'
+  '25':
+    location:
+      x: 1290
+      y: 6046
+    release: 4216
+    speed: 1
+    status: 'off'
+  '250':
+    location:
+      x: 645
+      y: 2670
+    release: 1754
+    speed: 1
+    status: 'off'
+  '251':
+    location:
+      x: 891
+      y: 9884
+    release: 2157
+    speed: 1
+    status: 'off'
+  '252':
+    location:
+      x: 6770
+      y: 5976
+    release: 2314
+    speed: 1
+    status: 'off'
+  '253':
+    location:
+      x: 5853
+      y: 1180
+    release: 2293
+    speed: 1
+    status: 'off'
+  '254':
+    location:
+      x: 9351
+      y: 5217
+    release: 1730
+    speed: 1
+    status: 'off'
+  '255':
+    location:
+      x: 1405
+      y: 9111
+    release: 4421
+    speed: 1
+    status: 'off'
+  '256':
+    location:
+      x: 4341
+      y: 9944
+    release: 4376
+    speed: 1
+    status: 'off'
+  '257':
+    location:
+      x: 8153
+      y: 7865
+    release: 3875
+    speed: 1
+    status: 'off'
+  '258':
+    location:
+      x: 2680
+      y: 1774
+    release: 1861
+    speed: 1
+    status: 'off'
+  '259':
+    location:
+      x: 4384
+      y: 8932
+    release: 660
+    speed: 1
+    status: 'off'
+  '26':
+    location:
+      x: 3111
+      y: 1158
+    release: 1446
+    speed: 1
+    status: 'off'
+  '260':
+    location:
+      x: 2743
+      y: 5703
+    release: 2923
+    speed: 1
+    status: 'off'
+  '261':
+    location:
+      x: 2213
+      y: 9638
+    release: 306
+    speed: 1
+    status: 'off'
+  '262':
+    location:
+      x: 2635
+      y: 8597
+    release: 1278
+    speed: 1
+    status: 'off'
+  '263':
+    location:
+      x: 6917
+      y: 509
+    release: 4085
+    speed: 1
+    status: 'off'
+  '264':
+    location:
+      x: 2864
+      y: 1686
+    release: 2213
+    speed: 1
+    status: 'off'
+  '265':
+    location:
+      x: 9268
+      y: 7557
+    release: 2361
+    speed: 1
+    status: 'off'
+  '266':
+    location:
+      x: 9882
+      y: 8197
+    release: 4469
+    speed: 1
+    status: 'off'
+  '267':
+    location:
+      x: 654
+      y: 6697
+    release: 2466
+    speed: 1
+    status: 'off'
+  '268':
+    location:
+      x: 7742
+      y: 1193
+    release: 1852
+    speed: 1
+    status: 'off'
+  '269':
+    location:
+      x: 4326
+      y: 7535
+    release: 3707
+    speed: 1
+    status: 'off'
+  '27':
+    location:
+      x: 4987
+      y: 9754
+    release: 777
+    speed: 1
+    status: 'off'
+  '270':
+    location:
+      x: 9382
+      y: 6243
+    release: 3395
+    speed: 1
+    status: 'off'
+  '271':
+    location:
+      x: 5938
+      y: 2503
+    release: 1413
+    speed: 1
+    status: 'off'
+  '272':
+    location:
+      x: 1202
+      y: 6667
+    release: 2479
+    speed: 1
+    status: 'off'
+  '273':
+    location:
+      x: 2810
+      y: 723
+    release: 1905
+    speed: 1
+    status: 'off'
+  '274':
+    location:
+      x: 9573
+      y: 631
+    release: 3099
+    speed: 1
+    status: 'off'
+  '275':
+    location:
+      x: 5544
+      y: 9136
+    release: 3777
+    speed: 1
+    status: 'off'
+  '276':
+    location:
+      x: 7372
+      y: 1911
+    release: 3184
+    speed: 1
+    status: 'off'
+  '277':
+    location:
+      x: 8115
+      y: 7287
+    release: 2908
+    speed: 1
+    status: 'off'
+  '278':
+    location:
+      x: 9645
+      y: 9914
+    release: 948
+    speed: 1
+    status: 'off'
+  '279':
+    location:
+      x: 6520
+      y: 1838
+    release: 4961
+    speed: 1
+    status: 'off'
+  '28':
+    location:
+      x: 9362
+      y: 4540
+    release: 4226
+    speed: 1
+    status: 'off'
+  '280':
+    location:
+      x: 4492
+      y: 145
+    release: 2201
+    speed: 1
+    status: 'off'
+  '281':
+    location:
+      x: 4968
+      y: 100
+    release: 2703
+    speed: 1
+    status: 'off'
+  '282':
+    location:
+      x: 5319
+      y: 7385
+    release: 290
+    speed: 1
+    status: 'off'
+  '283':
+    location:
+      x: 6602
+      y: 678
+    release: 3822
+    speed: 1
+    status: 'off'
+  '284':
+    location:
+      x: 5298
+      y: 571
+    release: 584
+    speed: 1
+    status: 'off'
+  '285':
+    location:
+      x: 6383
+      y: 3014
+    release: 3727
+    speed: 1
+    status: 'off'
+  '286':
+    location:
+      x: 8028
+      y: 2791
+    release: 3863
+    speed: 1
+    status: 'off'
+  '287':
+    location:
+      x: 2534
+      y: 2730
+    release: 641
+    speed: 1
+    status: 'off'
+  '288':
+    location:
+      x: 9760
+      y: 6939
+    release: 4002
+    speed: 1
+    status: 'off'
+  '289':
+    location:
+      x: 9163
+      y: 7443
+    release: 3601
+    speed: 1
+    status: 'off'
+  '29':
+    location:
+      x: 4710
+      y: 3625
+    release: 4471
+    speed: 1
+    status: 'off'
+  '290':
+    location:
+      x: 3583
+      y: 6427
+    release: 4023
+    speed: 1
+    status: 'off'
+  '291':
+    location:
+      x: 3064
+      y: 2592
+    release: 2023
+    speed: 1
+    status: 'off'
+  '292':
+    location:
+      x: 9418
+      y: 9524
+    release: 4349
+    speed: 1
+    status: 'off'
+  '293':
+    location:
+      x: 9197
+      y: 2794
+    release: 1358
+    speed: 1
+    status: 'off'
+  '294':
+    location:
+      x: 9703
+      y: 3626
+    release: 4445
+    speed: 1
+    status: 'off'
+  '295':
+    location:
+      x: 9600
+      y: 6051
+    release: 1839
+    speed: 1
+    status: 'off'
+  '296':
+    location:
+      x: 5150
+      y: 9799
+    release: 2710
+    speed: 1
+    status: 'off'
+  '297':
+    location:
+      x: 7995
+      y: 7815
+    release: 928
+    speed: 1
+    status: 'off'
+  '298':
+    location:
+      x: 5686
+      y: 7452
+    release: 2359
+    speed: 1
+    status: 'off'
+  '299':
+    location:
+      x: 8669
+      y: 4557
+    release: 1953
+    speed: 1
+    status: 'off'
+  '3':
+    location:
+      x: 933
+      y: 2632
+    release: 3497
+    speed: 1
+    status: 'off'
+  '30':
+    location:
+      x: 2937
+      y: 9148
+    release: 2224
+    speed: 1
+    status: 'off'
+  '300':
+    location:
+      x: 1075
+      y: 9102
+    release: 4936
+    speed: 1
+    status: 'off'
+  '301':
+    location:
+      x: 5360
+      y: 1903
+    release: 3307
+    speed: 1
+    status: 'off'
+  '302':
+    location:
+      x: 9878
+      y: 4153
+    release: 938
+    speed: 1
+    status: 'off'
+  '303':
+    location:
+      x: 3933
+      y: 7296
+    release: 1565
+    speed: 1
+    status: 'off'
+  '304':
+    location:
+      x: 6326
+      y: 5310
+    release: 83
+    speed: 1
+    status: 'off'
+  '305':
+    location:
+      x: 8189
+      y: 4593
+    release: 3370
+    speed: 1
+    status: 'off'
+  '306':
+    location:
+      x: 6484
+      y: 3694
+    release: 4657
+    speed: 1
+    status: 'off'
+  '307':
+    location:
+      x: 5167
+      y: 6723
+    release: 3348
+    speed: 1
+    status: 'off'
+  '308':
+    location:
+      x: 9666
+      y: 6962
+    release: 1035
+    speed: 1
+    status: 'off'
+  '309':
+    location:
+      x: 4945
+      y: 8565
+    release: 4237
+    speed: 1
+    status: 'off'
+  '31':
+    location:
+      x: 5178
+      y: 8827
+    release: 1680
+    speed: 1
+    status: 'off'
+  '310':
+    location:
+      x: 7175
+      y: 9560
+    release: 630
+    speed: 1
+    status: 'off'
+  '311':
+    location:
+      x: 8205
+      y: 6852
+    release: 3064
+    speed: 1
+    status: 'off'
+  '312':
+    location:
+      x: 5339
+      y: 1274
+    release: 683
+    speed: 1
+    status: 'off'
+  '313':
+    location:
+      x: 7480
+      y: 2581
+    release: 91
+    speed: 1
+    status: 'off'
+  '314':
+    location:
+      x: 2152
+      y: 42
+    release: 2540
+    speed: 1
+    status: 'off'
+  '315':
+    location:
+      x: 3535
+      y: 299
+    release: 4517
+    speed: 1
+    status: 'off'
+  '316':
+    location:
+      x: 2591
+      y: 4099
+    release: 4014
+    speed: 1
+    status: 'off'
+  '317':
+    location:
+      x: 3981
+      y: 485
+    release: 4672
+    speed: 1
+    status: 'off'
+  '318':
+    location:
+      x: 9815
+      y: 8917
+    release: 4924
+    speed: 1
+    status: 'off'
+  '319':
+    location:
+      x: 4294
+      y: 4466
+    release: 3486
+    speed: 1
+    status: 'off'
+  '32':
+    location:
+      x: 4505
+      y: 822
+    release: 1559
+    speed: 1
+    status: 'off'
+  '320':
+    location:
+      x: 755
+      y: 421
+    release: 2713
+    speed: 1
+    status: 'off'
+  '321':
+    location:
+      x: 2104
+      y: 5991
+    release: 1564
+    speed: 1
+    status: 'off'
+  '322':
+    location:
+      x: 5738
+      y: 428
+    release: 4331
+    speed: 1
+    status: 'off'
+  '323':
+    location:
+      x: 9744
+      y: 9593
+    release: 1174
+    speed: 1
+    status: 'off'
+  '324':
+    location:
+      x: 3855
+      y: 1089
+    release: 3503
+    speed: 1
+    status: 'off'
+  '325':
+    location:
+      x: 5955
+      y: 7805
+    release: 3124
+    speed: 1
+    status: 'off'
+  '326':
+    location:
+      x: 9140
+      y: 724
+    release: 3328
+    speed: 1
+    status: 'off'
+  '327':
+    location:
+      x: 2357
+      y: 9943
+    release: 4029
+    speed: 1
+    status: 'off'
+  '328':
+    location:
+      x: 6636
+      y: 222
+    release: 4526
+    speed: 1
+    status: 'off'
+  '329':
+    location:
+      x: 4829
+      y: 1460
+    release: 144
+    speed: 1
+    status: 'off'
+  '33':
+    location:
+      x: 5753
+      y: 6612
+    release: 692
+    speed: 1
+    status: 'off'
+  '330':
+    location:
+      x: 4233
+      y: 8504
+    release: 1802
+    speed: 1
+    status: 'off'
+  '331':
+    location:
+      x: 4490
+      y: 9399
+    release: 1601
+    speed: 1
+    status: 'off'
+  '332':
+    location:
+      x: 3602
+      y: 5017
+    release: 279
+    speed: 1
+    status: 'off'
+  '333':
+    location:
+      x: 7215
+      y: 816
+    release: 2263
+    speed: 1
+    status: 'off'
+  '334':
+    location:
+      x: 7016
+      y: 7922
+    release: 1087
+    speed: 1
+    status: 'off'
+  '335':
+    location:
+      x: 4967
+      y: 991
+    release: 3098
+    speed: 1
+    status: 'off'
+  '336':
+    location:
+      x: 2
+      y: 3299
+    release: 3466
+    speed: 1
+    status: 'off'
+  '337':
+    location:
+      x: 1607
+      y: 1648
+    release: 3727
+    speed: 1
+    status: 'off'
+  '338':
+    location:
+      x: 5197
+      y: 8083
+    release: 4127
+    speed: 1
+    status: 'off'
+  '339':
+    location:
+      x: 9342
+      y: 1054
+    release: 4963
+    speed: 1
+    status: 'off'
+  '34':
+    location:
+      x: 2125
+      y: 9148
+    release: 3790
+    speed: 1
+    status: 'off'
+  '340':
+    location:
+      x: 7939
+      y: 5426
+    release: 3932
+    speed: 1
+    status: 'off'
+  '341':
+    location:
+      x: 725
+      y: 216
+    release: 2936
+    speed: 1
+    status: 'off'
+  '342':
+    location:
+      x: 7616
+      y: 3888
+    release: 1578
+    speed: 1
+    status: 'off'
+  '343':
+    location:
+      x: 2972
+      y: 5140
+    release: 2844
+    speed: 1
+    status: 'off'
+  '344':
+    location:
+      x: 2584
+      y: 7933
+    release: 3372
+    speed: 1
+    status: 'off'
+  '345':
+    location:
+      x: 4952
+      y: 2351
+    release: 4977
+    speed: 1
+    status: 'off'
+  '346':
+    location:
+      x: 4788
+      y: 7424
+    release: 4945
+    speed: 1
+    status: 'off'
+  '347':
+    location:
+      x: 1412
+      y: 6810
+    release: 2891
+    speed: 1
+    status: 'off'
+  '348':
+    location:
+      x: 4796
+      y: 2206
+    release: 607
+    speed: 1
+    status: 'off'
+  '349':
+    location:
+      x: 4936
+      y: 9330
+    release: 552
+    speed: 1
+    status: 'off'
+  '35':
+    location:
+      x: 3075
+      y: 9775
+    release: 621
+    speed: 1
+    status: 'off'
+  '36':
+    location:
+      x: 1576
+      y: 7988
+    release: 4810
+    speed: 1
+    status: 'off'
+  '37':
+    location:
+      x: 1018
+      y: 9447
+    release: 1631
+    speed: 1
+    status: 'off'
+  '38':
+    location:
+      x: 3882
+      y: 5851
+    release: 590
+    speed: 1
+    status: 'off'
+  '39':
+    location:
+      x: 7993
+      y: 5592
+    release: 1286
+    speed: 1
+    status: 'off'
+  '4':
+    location:
+      x: 8140
+      y: 1972
+    release: 727
+    speed: 1
+    status: 'off'
+  '40':
+    location:
+      x: 5073
+      y: 4448
+    release: 4049
+    speed: 1
+    status: 'off'
+  '41':
+    location:
+      x: 4595
+      y: 8094
+    release: 3581
+    speed: 1
+    status: 'off'
+  '42':
+    location:
+      x: 179
+      y: 6465
+    release: 2814
+    speed: 1
+    status: 'off'
+  '43':
+    location:
+      x: 851
+      y: 5402
+    release: 2415
+    speed: 1
+    status: 'off'
+  '44':
+    location:
+      x: 5025
+      y: 2617
+    release: 4118
+    speed: 1
+    status: 'off'
+  '45':
+    location:
+      x: 9220
+      y: 8862
+    release: 1686
+    speed: 1
+    status: 'off'
+  '46':
+    location:
+      x: 5504
+      y: 4315
+    release: 4642
+    speed: 1
+    status: 'off'
+  '47':
+    location:
+      x: 1549
+      y: 4944
+    release: 3790
+    speed: 1
+    status: 'off'
+  '48':
+    location:
+      x: 7887
+      y: 1721
+    release: 151
+    speed: 1
+    status: 'off'
+  '49':
+    location:
+      x: 1748
+      y: 4753
+    release: 1023
+    speed: 1
+    status: 'off'
+  '5':
+    location:
+      x: 860
+      y: 6610
+    release: 925
+    speed: 1
+    status: 'off'
+  '50':
+    location:
+      x: 999
+      y: 7080
+    release: 4642
+    speed: 1
+    status: 'off'
+  '51':
+    location:
+      x: 6159
+      y: 3645
+    release: 2278
+    speed: 1
+    status: 'off'
+  '52':
+    location:
+      x: 7533
+      y: 1001
+    release: 1027
+    speed: 1
+    status: 'off'
+  '53':
+    location:
+      x: 2367
+      y: 5026
+    release: 1358
+    speed: 1
+    status: 'off'
+  '54':
+    location:
+      x: 2207
+      y: 4383
+    release: 991
+    speed: 1
+    status: 'off'
+  '55':
+    location:
+      x: 1219
+      y: 7994
+    release: 3852
+    speed: 1
+    status: 'off'
+  '56':
+    location:
+      x: 23
+      y: 6426
+    release: 1425
+    speed: 1
+    status: 'off'
+  '57':
+    location:
+      x: 6847
+      y: 9014
+    release: 3816
+    speed: 1
+    status: 'off'
+  '58':
+    location:
+      x: 4309
+      y: 1140
+    release: 4402
+    speed: 1
+    status: 'off'
+  '59':
+    location:
+      x: 8172
+      y: 7666
+    release: 2782
+    speed: 1
+    status: 'off'
+  '6':
+    location:
+      x: 2066
+      y: 4009
+    release: 3310
+    speed: 1
+    status: 'off'
+  '60':
+    location:
+      x: 2062
+      y: 3553
+    release: 3077
+    speed: 1
+    status: 'off'
+  '61':
+    location:
+      x: 2038
+      y: 2675
+    release: 2321
+    speed: 1
+    status: 'off'
+  '62':
+    location:
+      x: 9375
+      y: 8502
+    release: 2564
+    speed: 1
+    status: 'off'
+  '63':
+    location:
+      x: 1393
+      y: 7222
+    release: 885
+    speed: 1
+    status: 'off'
+  '64':
+    location:
+      x: 3808
+      y: 8250
+    release: 3130
+    speed: 1
+    status: 'off'
+  '65':
+    location:
+      x: 7938
+      y: 2061
+    release: 4036
+    speed: 1
+    status: 'off'
+  '66':
+    location:
+      x: 7542
+      y: 4799
+    release: 4845
+    speed: 1
+    status: 'off'
+  '67':
+    location:
+      x: 5055
+      y: 6742
+    release: 1666
+    speed: 1
+    status: 'off'
+  '68':
+    location:
+      x: 9651
+      y: 4297
+    release: 1137
+    speed: 1
+    status: 'off'
+  '69':
+    location:
+      x: 4432
+      y: 1602
+    release: 610
+    speed: 1
+    status: 'off'
+  '7':
+    location:
+      x: 6356
+      y: 6890
+    release: 588
+    speed: 1
+    status: 'off'
+  '70':
+    location:
+      x: 6475
+      y: 247
+    release: 2891
+    speed: 1
+    status: 'off'
+  '71':
+    location:
+      x: 781
+      y: 615
+    release: 1054
+    speed: 1
+    status: 'off'
+  '72':
+    location:
+      x: 3390
+      y: 2014
+    release: 1497
+    speed: 1
+    status: 'off'
+  '73':
+    location:
+      x: 4022
+      y: 560
+    release: 3884
+    speed: 1
+    status: 'off'
+  '74':
+    location:
+      x: 9348
+      y: 3327
+    release: 1089
+    speed: 1
+    status: 'off'
+  '75':
+    location:
+      x: 7131
+      y: 412
+    release: 1560
+    speed: 1
+    status: 'off'
+  '76':
+    location:
+      x: 2455
+      y: 6659
+    release: 2003
+    speed: 1
+    status: 'off'
+  '77':
+    location:
+      x: 5854
+      y: 5879
+    release: 2625
+    speed: 1
+    status: 'off'
+  '78':
+    location:
+      x: 3518
+      y: 6883
+    release: 3530
+    speed: 1
+    status: 'off'
+  '79':
+    location:
+      x: 1162
+      y: 4948
+    release: 1896
+    speed: 1
+    status: 'off'
+  '8':
+    location:
+      x: 2889
+      y: 6449
+    release: 3008
+    speed: 1
+    status: 'off'
+  '80':
+    location:
+      x: 7315
+      y: 2781
+    release: 3273
+    speed: 1
+    status: 'off'
+  '81':
+    location:
+      x: 1442
+      y: 5433
+    release: 980
+    speed: 1
+    status: 'off'
+  '82':
+    location:
+      x: 3615
+      y: 1248
+    release: 1528
+    speed: 1
+    status: 'off'
+  '83':
+    location:
+      x: 8766
+      y: 5565
+    release: 385
+    speed: 1
+    status: 'off'
+  '84':
+    location:
+      x: 9890
+      y: 7618
+    release: 1498
+    speed: 1
+    status: 'off'
+  '85':
+    location:
+      x: 1707
+      y: 9637
+    release: 4982
+    speed: 1
+    status: 'off'
+  '86':
+    location:
+      x: 2751
+      y: 1633
+    release: 2644
+    speed: 1
+    status: 'off'
+  '87':
+    location:
+      x: 3341
+      y: 9773
+    release: 425
+    speed: 1
+    status: 'off'
+  '88':
+    location:
+      x: 2534
+      y: 8398
+    release: 1014
+    speed: 1
+    status: 'off'
+  '89':
+    location:
+      x: 9507
+      y: 245
+    release: 4087
+    speed: 1
+    status: 'off'
+  '9':
+    location:
+      x: 5012
+      y: 8806
+    release: 2802
+    speed: 1
+    status: 'off'
+  '90':
+    location:
+      x: 5881
+      y: 4779
+    release: 1017
+    speed: 1
+    status: 'off'
+  '91':
+    location:
+      x: 2932
+      y: 2895
+    release: 3729
+    speed: 1
+    status: 'off'
+  '92':
+    location:
+      x: 300
+      y: 4509
+    release: 603
+    speed: 1
+    status: 'off'
+  '93':
+    location:
+      x: 5545
+      y: 8344
+    release: 3219
+    speed: 1
+    status: 'off'
+  '94':
+    location:
+      x: 1057
+      y: 9817
+    release: 2921
+    speed: 1
+    status: 'off'
+  '95':
+    location:
+      x: 7921
+      y: 2518
+    release: 3220
+    speed: 1
+    status: 'off'
+  '96':
+    location:
+      x: 8556
+      y: 455
+    release: 4558
+    speed: 1
+    status: 'off'
+  '97':
+    location:
+      x: 6252
+      y: 7570
+    release: 4358
+    speed: 1
+    status: 'off'
+  '98':
+    location:
+      x: 3878
+      y: 999
+    release: 4288
+    speed: 1
+    status: 'off'
+  '99':
+    location:
+      x: 2947
+      y: 107
+    release: 2829
+    speed: 1
+    status: 'off'
+size: 350

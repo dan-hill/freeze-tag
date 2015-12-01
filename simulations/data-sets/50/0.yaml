@@ -1,0 +1,352 @@
+robots:
+  '0':
+    location:
+      x: 8314
+      y: 3946
+    release: 9265
+    speed: 1
+    status: 'on'
+  '1':
+    location:
+      x: 8504
+      y: 4631
+    release: 1845
+    speed: 1
+    status: 'off'
+  '10':
+    location:
+      x: 7570
+      y: 6607
+    release: 3714
+    speed: 1
+    status: 'off'
+  '11':
+    location:
+      x: 2006
+      y: 2589
+    release: 4641
+    speed: 1
+    status: 'off'
+  '12':
+    location:
+      x: 4190
+      y: 7648
+    release: 2692
+    speed: 1
+    status: 'off'
+  '13':
+    location:
+      x: 1188
+      y: 7166
+    release: 2566
+    speed: 1
+    status: 'off'
+  '14':
+    location:
+      x: 6261
+      y: 5570
+    release: 801
+    speed: 1
+    status: 'off'
+  '15':
+    location:
+      x: 2624
+      y: 8352
+    release: 1011
+    speed: 1
+    status: 'off'
+  '16':
+    location:
+      x: 3135
+      y: 6120
+    release: 1264
+    speed: 1
+    status: 'off'
+  '17':
+    location:
+      x: 3050
+      y: 1121
+    release: 317
+    speed: 1
+    status: 'off'
+  '18':
+    location:
+      x: 1985
+      y: 9890
+    release: 3522
+    speed: 1
+    status: 'off'
+  '19':
+    location:
+      x: 464
+      y: 6840
+    release: 3650
+    speed: 1
+    status: 'off'
+  '2':
+    location:
+      x: 8895
+      y: 2420
+    release: 549
+    speed: 1
+    status: 'off'
+  '20':
+    location:
+      x: 6150
+      y: 9246
+    release: 4002
+    speed: 1
+    status: 'off'
+  '21':
+    location:
+      x: 8673
+      y: 7820
+    release: 4215
+    speed: 1
+    status: 'off'
+  '22':
+    location:
+      x: 7667
+      y: 2993
+    release: 1558
+    speed: 1
+    status: 'off'
+  '23':
+    location:
+      x: 6338
+      y: 6975
+    release: 1750
+    speed: 1
+    status: 'off'
+  '24':
+    location:
+      x: 8206
+      y: 7100
+    release: 3938
+    speed: 1
+    status: 'off'
+  '25':
+    location:
+      x: 3926
+      y: 8909
+    release: 1676
+    speed: 1
+    status: 'off'
+  '26':
+    location:
+      x: 970
+      y: 4128
+    release: 3473
+    speed: 1
+    status: 'off'
+  '27':
+    location:
+      x: 1315
+      y: 1908
+    release: 2339
+    speed: 1
+    status: 'off'
+  '28':
+    location:
+      x: 7818
+      y: 9852
+    release: 3481
+    speed: 1
+    status: 'off'
+  '29':
+    location:
+      x: 8246
+      y: 1556
+    release: 684
+    speed: 1
+    status: 'off'
+  '3':
+    location:
+      x: 167
+      y: 8776
+    release: 1664
+    speed: 1
+    status: 'off'
+  '30':
+    location:
+      x: 1822
+      y: 1661
+    release: 2876
+    speed: 1
+    status: 'off'
+  '31':
+    location:
+      x: 9911
+      y: 5004
+    release: 1175
+    speed: 1
+    status: 'off'
+  '32':
+    location:
+      x: 9504
+      y: 3607
+    release: 4769
+    speed: 1
+    status: 'off'
+  '33':
+    location:
+      x: 3314
+      y: 3712
+    release: 1302
+    speed: 1
+    status: 'off'
+  '34':
+    location:
+      x: 5243
+      y: 5407
+    release: 1375
+    speed: 1
+    status: 'off'
+  '35':
+    location:
+      x: 6690
+      y: 8944
+    release: 81
+    speed: 1
+    status: 'off'
+  '36':
+    location:
+      x: 6864
+      y: 3746
+    release: 3392
+    speed: 1
+    status: 'off'
+  '37':
+    location:
+      x: 9444
+      y: 962
+    release: 3301
+    speed: 1
+    status: 'off'
+  '38':
+    location:
+      x: 4890
+      y: 4828
+    release: 2473
+    speed: 1
+    status: 'off'
+  '39':
+    location:
+      x: 3283
+      y: 5939
+    release: 1970
+    speed: 1
+    status: 'off'
+  '4':
+    location:
+      x: 1094
+      y: 4088
+    release: 3209
+    speed: 1
+    status: 'off'
+  '40':
+    location:
+      x: 5085
+      y: 608
+    release: 2589
+    speed: 1
+    status: 'off'
+  '41':
+    location:
+      x: 5105
+      y: 7485
+    release: 560
+    speed: 1
+    status: 'off'
+  '42':
+    location:
+      x: 8880
+      y: 1710
+    release: 19
+    speed: 1
+    status: 'off'
+  '43':
+    location:
+      x: 8440
+      y: 5649
+    release: 2763
+    speed: 1
+    status: 'off'
+  '44':
+    location:
+      x: 473
+      y: 4929
+    release: 705
+    speed: 1
+    status: 'off'
+  '45':
+    location:
+      x: 6315
+      y: 7822
+    release: 3951
+    speed: 1
+    status: 'off'
+  '46':
+    location:
+      x: 8936
+      y: 8794
+    release: 1311
+    speed: 1
+    status: 'off'
+  '47':
+    location:
+      x: 391
+      y: 347
+    release: 4904
+    speed: 1
+    status: 'off'
+  '48':
+    location:
+      x: 8403
+      y: 750
+    release: 1154
+    speed: 1
+    status: 'off'
+  '49':
+    location:
+      x: 6649
+      y: 7379
+    release: 1626
+    speed: 1
+    status: 'off'
+  '5':
+    location:
+      x: 7056
+      y: 1059
+    release: 812
+    speed: 1
+    status: 'off'
+  '6':
+    location:
+      x: 9633
+      y: 6863
+    release: 3197
+    speed: 1
+    status: 'off'
+  '7':
+    location:
+      x: 782
+      y: 7053
+    release: 1354
+    speed: 1
+    status: 'off'
+  '8':
+    location:
+      x: 2935
+      y: 7798
+    release: 4257
+    speed: 1
+    status: 'off'
+  '9':
+    location:
+      x: 5827
+      y: 1932
+    release: 1106
+    speed: 1
+    status: 'off'
+size: 50
