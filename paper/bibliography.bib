@@ -1,0 +1,114 @@
+@article{FTP.0,
+abstract = {An optimization problem that naturally arises in the study of swarm robotics is the Freeze-Tag Problem (FTP) of how to awaken a set of ``asleep'' robots, by having an awakened robot move to their locations. Once a robot is awake, it can assist in awakening other slumbering robots.The objective is to have all robots awake as early as possible. While the FTP bears some resemblance to problems from areas in combinatorial optimization such as routing, broadcasting, scheduling, and covering, its algorithmic characteristics are surprisingly different. We consider both scenarios on graphs and in geometric environments.In graphs, robots sleep at vertices and there is a length function on the edges. Awake robots travel along edges, with time depending on edge length. For most scenarios, we consider the offline version of the problem, in which each awake robot knows the position of all other robots. We prove that the problem is NP-hard, even for the special case of star graphs. We also establish hardness of approximation, showing that it is NP-hard to obtain an approximation factor better than 5/3, even for graphs of bounded degree.These lower bounds are complemented with several positive algorithmic results, including: (1) We show that the natural greedy strategy on star graphs has a tight worst-case performance of 7/3 and give a polynomial-time approximation scheme (PTAS) for star graphs. (2) We give a simple O(log D)-competitive online algorithm for graphs with maximum degree D and locally bounded edge weights. (3) We give a PTAS, running in nearly linear time, for geometrically embedded instances.},
+archivePrefix = {arXiv},
+arxivId = {cs/0402045},
+author = {Arkin, Esther M. and Bender, Michael a. and Fekete, Sandor P. and Mitchell, Joseph S B and Skutella, Martin},
+doi = {10.1007/s00453-006-1206-1},
+eprint = {0402045},
+file = {:home/dan/doc/papers/ArkinBeFe06-freezetag.pdf:pdf},
+isbn = {0178-4617},
+issn = {01784617},
+journal = {Algorithmica (New York)},
+keywords = {Approximation algorithms,Binary trees,Broadcasting,Complexity,Distributed computing,Makespan,Mobile robots,NP-hardness,Scheduling,Swarm robotics},
+mendeley-groups = {Freeze Tag Problem},
+month = oct,
+number = {2},
+pages = {193--221},
+primaryClass = {cs},
+title = {{The freeze-tag problem: How to wake up a swarm of robots}},
+url = {http://link.springer.com/10.1007/s00453-006-1206-1},
+volume = {46},
+year = {2006}
+}
+
+@inproceedings{IAAFTP,
+	author = {Arkin, Esther M. and Bender, Michael A. and Ge, Dongdong},
+	title = {Improved Approximation Algorithms for the Freeze-tag Problem},
+	booktitle = {Proceedings of the Fifteenth Annual ACM Symposium on Parallel Algorithms and Architectures},
+	series = {SPAA '03},
+	year = {2003},
+	isbn = {1-58113-661-7},
+	location = {San Diego, California, USA},
+	pages = {295--303},
+	numpages = {9},
+	url = {http://doi.acm.org/10.1145/777412.777465},
+	doi = {10.1145/777412.777465},
+	acmid = {777465},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {NP-hardness, TSP, approximation algorithms, data dissemination, freeze-tag problem, minimum broadcast-time problem, minimum gossip time problem, multicast problem, network optimization, scheduling, swarm robotics},
+} 
+@incollection{FTP.1,
+abstract = {We consider the following problem from swarm robotics: given one or more "awake" robots in some metric space M, wake up a set of "asleep" robots. A robot awakens a sleeping robot by moving to the sleeping robot's position. When a robot awakens, it is available to assist in awakening other slumbering robots. We investigate offline and online versions of this problem and give a 2-competitive strategy and a lower bound of 2 in the case when M is discrete and the objective is to minimize the total movement cost. We also study the case when M is continuous and show a lower bound of 7/3 when the objective is to minimize the time when the last robot awakens.},
+author = {Hammar, Mikael and Nilsson, Bengt J. and Persson, Mia},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/11682462\_53},
+file = {:home/dan/doc/papers/latin06persson1.pdf:pdf},
+isbn = {354032755X},
+issn = {03029743},
+mendeley-groups = {Freeze Tag Problem},
+pages = {569--579},
+title = {{The Online Freeze-Tag Problem}},
+url = {http://link.springer.com/10.1007/11682462\_53},
+volume = {3887 LNCS},
+year = {2006}
+}
+
+@incollection{FTP.2,
+abstract = {In the Freeze Tag Problem \{(FTP)\} we are given a swarm of n asleep$\backslash$n(frozen or inactive) robots and a single awake (active) robot, and$\backslash$nwe want to awaken all robots in the shortest possible time. A robot$\backslash$nis awakened when an active robot ``touches'' it. The goal is to compute$\backslash$nan optimal awakening schedule such that all robots are awake by time$\backslash$nt*, for the smallest possible value of t*. We devise and test heuristic$\backslash$nstrategies on geometric and network datasets. Our experiments show$\backslash$nthat all of the strategies perform well, with the simple greedy strategy$\backslash$nperforming particularly well. A theoretical analysis of the greedy$\backslash$nstrategy gives a tight approximation bound of $\Theta$(√log n) for points$\backslash$nin the plane. We show more generally that the (tight) performance$\backslash$nbound is $\Theta$((log n)1-1/d ) in d dimensions. This is in contrast to$\backslash$ngeneral metric spaces, where greedy is known to have a $\Theta$(log n)$\backslash$napproximation factor, and no method is known to achieve an approximation$\backslash$nbound of o(log n).},
+author = {Sztainberg, Marcelo O. and Arkin, Esther M. and Bender, Michael A. and Mitchell, Joseph S. B.},
+booktitle = {Algorithm Theory --- \{SWAT\} 2002},
+doi = {10.1007/3-540-45471-3\_28},
+file = {:home/dan/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Sztainberg et al. - 2002 - Analysis of Heuristics for the Freeze-Tag Problem.ps:ps},
+isbn = {9783540438663},
+keywords = {freeze-tag problem},
+mendeley-groups = {Freeze Tag Problem},
+pages = {270--279},
+title = {{Analysis of Heuristics for the Freeze-Tag Problem}},
+url = {http://dx.doi.org/10.1007/3-540-45471-3\_28 http://link.springer.com/10.1007/3-540-45471-3\_28},
+year = {2002}
+}
+
+
+@article{ADBMDSTP,
+	title={Approximating the degree-bounded minimum diameter spanning tree problem},
+	author={K{\"o}nemann, Jochen and Levin, Asaf and Sinha, Amitabh},
+	journal={Algorithmica},
+	volume={41},
+	number={2},
+	pages={117--129},
+	year={2005},
+	publisher={Springer}
+}
+
+@incollection{NSTFTP,
+	title={A neighborhood search technique for the freeze tag problem},
+	author={Bucantanschi, Dan and Hoffmann, Blaine and Hutson, Kevin R and Kretchmar, R Matthew},
+	booktitle={Extending the Horizons: Advances in Computing, Optimization, and Decision Technologies},
+	pages={97--113},
+	year={2007},
+	publisher={Springer}
+}
+
+@article{ACSFTP,
+	title={The ant colony system for the freeze-tag problem},
+	author={Bucatanschi, Dan George},
+	journal={Student Scholarship},
+	year={2004}
+}
+
+@book{CAG2SP,
+	title={A competitive algorithm for the general 2-server problem},
+	author={Sitters, Ren{\'e} A and Stougie, Leen and De Paepe, Willem E},
+	year={2003},
+	publisher={Springer}
+}
+
+@book{IA,
+ author = {Cormen, Thomas},
+ title = {Introduction to algorithms},
+ publisher = {MIT Press},
+ year = {2009},
+ address = {Cambridge, Mass},
+ isbn = {9780262033848}
+ }

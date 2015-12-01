@@ -1,0 +1,44 @@
+\usepackage{amsthm}
+\usepackage[sc]{mathpazo} 	% palatino font
+\usepackage[T1]{fontenc} 	% 8-bit encoding; 256 glyphs
+\linespread{1.05} 			% line spacing
+\usepackage{microtype} 		% slightly tweak font spacing
+\PassOptionsToPackage{usenames,dvipsnames,svgnames}{xcolor}  
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,automata}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} 	% Document margins
+\usepackage{multicol} 												% two-column layout
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} 	% float captions
+\usepackage{booktabs} 		% Horizontal rules in tables
+\usepackage{float} 			% allows tables/figures in the multi-column environment
+\usepackage{hyperref} 		% hyperlinks in the PDF
+\usepackage{subfig}			% figures inside of figure environment
+\usepackage{lettrine} 		% large first letter
+\usepackage{paralist} 		% compactitem environment
+\usepackage{abstract} 		% abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} 		% bold abstract text
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % small italic abstract
+
+\newtheorem{theorem}{Theorem}
+
+\usepackage{titlesec} 							% title customization
+\renewcommand\thesection{\Roman{section}} 		% roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\usepackage{fontspec}
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+
+\algrenewcommand\algorithmicrequire{\textbf{Precondition:}}
+\algrenewcommand\algorithmicensure{\textbf{Postcondition:}}
+
+\usepackage{fancyhdr} 	% Headers and footers
+\pagestyle{fancy} 		% All pages have headers and footers
+\fancyhead{} 			% Blank out the default header
+\fancyfoot{} 			% Blank out the default footer
+\fancyhead[C]{Algorithms for the Online Time Dependant Freeze-Tag Problem $\bullet$ July 2015 $\bullet$ Dan Hill} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text

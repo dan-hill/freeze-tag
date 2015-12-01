@@ -1,0 +1,136 @@
+\documentclass[twoside]{article}
+
+%-------------------------------------------------------------------------------
+
+\input{setup}		% includes and document setup
+
+%-------------------------------------------------------------------------------
+
+\input{title}		% title formatting
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+\input{abstract}	% abstract
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % Two-column layout throughout the main article text
+
+
+%----------------------------------------------------------------------------------------
+% Introduction
+%----------------------------------------------------------------------------------------
+\section{Introduction}
+The Freeze-Tag Problem (FTP) \cite{FTP.0} is a problem in the the field robotics in which a strategy to awaken a swarm must be found. In the original problem, we are given a swarm sleeping robots and a single awake robot. Sleeping robots are awakened when touched by an awake robot.
+
+In this paper we examine a variation of FTP \cite{FTP.1} in which each robot has a release time associated with it. Awake robots do not become aware of a sleeping robot's existence until it's release time has been met. We call this variation the Online Time Dependant Freeze-Tag Problem ( OTDFTP). 
+\paragraph{Related Work.}
+Hammer et al. \cite{FTP.1} found the Offline Time Dependant Freeze Tag Problem has a lower bound of $7/3 - \epsilon$, for any $\epsilon > 0$. 
+\paragraph{Preliminaries.}
+Let $R = \{r_0, r_1, r_2, \dots , r_n \} \subset M$ be the set of $n$ robots in some continuous metric space $M$. $M$ is a $d$-dimensional Euclidean space with distances measured according to an $L_p$ metric.
+
+Unless otherwise stated, the robot $r_0$ is the \textit{source robot} and is the only robot that is not in sleep mode. Each robot has 3 modes. In awake mode, a robot is fully functional and free to move. In sleep mode a robot is completely inactive and unable to be activated even if touched by an awake robot. Once the release time of a robot has been reached it enters \textit{wait mode} and awake robots can now sense it's position. In wait mode a robot is available for activation.
+
+Let $\sigma = (r, v)_1, (r, v)_2, \dots (r, v)_m$ be a set of locations of robots ordered by their release time.
+\paragraph{Summary of Results.}
+We find that the competitive ratio of the Nearest Neighbor heuristic is $5/2$.
+\section{Wake Up Strategies}
+\subsection{Nearest Neighbor Algorithm}
+To keep robots from traveling in a pack we utilize claims in which when a robot chooses a target, it will claim that target and no other robots will target that robot. \cite{FTP.2}
+\begin{algorithm}[H]
+  \caption{Returns the nearest unclaimed sleeping robot.}
+  \begin{algorithmic}
+    \Require{$A$ is the set of sleeping robots and $t$ be the robot's current target.}
+    \Statex
+    \Function{Nearest Neighbor}{$A$, $t$}
+		\If{$t \neq$ NULL}
+	        \State \Return $t$
+        \EndIf{}
+        
+        \If{$A.size = 0$}
+	        \State \Return NULL
+	    \EndIf
+	    
+        \Let{$m$}{NULL}
+        
+        \For{$robot$ in $A$}
+	        \If{$\neg robot.claimed$}
+	        
+				\If{$m =$ NULL}
+					\Let{$m$}{$robot$}
+				\Else
+					\Let{$a$}{dist($self$, $robot$)}
+			        \Let{$b$}{dist($self$, $m$)}
+			        \If{$a < b$}
+				        \Let{$m$}{$robot$}
+			        \EndIf
+			    \EndIf
+			\EndIf
+        \EndFor
+        \State \Return $m$
+    \EndFunction
+  \end{algorithmic}
+\end{algorithm}
+
+\begin{theorem}
+For any $\epsilon > 0$, there exists an instance of the OTDFTP for which the Nearest Neighbor Algorithm results in a makespan less than $\frac{5}{2} - \epsilon$ times optimal.
+\end{theorem}
+\begin{proof}
+
+\begin{figure}[H]
+\tikzset{location/.style={circle, draw=blue, fill=white, thick, minimum size=.5cm}}
+\tikzset{active_robot/.style={circle, fill=black, minimum size=.5cm}}
+\centering
+	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+		\node[location, label=below left:$p_0$]	(0)										{};
+		\node[location, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{};
+		\node[location, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{};
+		\node[location, label=below:$p_3$]		(3) [below = 3cm of 0]{};
+	
+		\tikzset{mystyle/.style={-,double=black}} 
+		\tikzset{every node/.style={fill=white, scale=1}} 
+		\path 
+			(0)	edge [mystyle]					(1)
+			(0) edge [mystyle]	node	{$3$} 	(2)
+			(0) edge [mystyle] 	node   	{$6$} 	(3)
+			(1) edge [mystyle] 	node   	{$1$} 	(2);
+	\end{tikzpicture}
+	\caption{}
+	\label{fig:1}
+	
+\end{figure}
+
+Let $G = {V, E}$ be the graph in Figure \ref{fig:1}. The source robot $r_0$ activates at vertex  $v_0$. At time $t = 0$ robot $r_1$ enters the sleeping state and is immediately awakened by $r_0$. At $t = 3$ $r_2$ enters sleeping state at $v_1$ and $r_3$ enters sleeping state at $v_2$. $r_0$ claims $r_2$ and begins moving down edge $(v_0, v_1)$. $r_1$ claims $r_3$ and begins moving down edge $(v_0, v_2)$. $r_0$ and $r_1$ arrive and awaken their respective targets at $t = 6$. At the same time $r_4$ enters sleeping state at $v_3$ and is claimed by $r_0$. $r_0$ travels down $(v_1, v_0)$ to $v_0$ then travels down $(v_0, v_3)$. $r_0$ arrives at $v_0$ at $t = 15$.
+
+In the optimum solution, the source robot $r_0$ still starts at $v_0$ and awakens $r_1$ at $t = 0$. $r_0$ immediately moves down $(v_0, v_3)$ and $r_1$ moves down $(v_0, v_1)$. At $t = 3$, $r_1$ arrives at $v_1$ as $r_2$ and $r_3$ are entering sleeping state. $r_1$ immediately claims and awakens $r_2$ then claims $r_2$ and begins moving down $(v_1, v_2)$. $r_1$ arrives at $v_2$ and awakens $r_3$ at $t = 4$. At $t = 6$ $r_0$ arrives at $v_3$ as $r_4$ is entering sleep mode and immediately awakens it. 
+
+This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makespan of 6 for the optimal solution to Figure \ref{fig:1}. This gives us a competitive ratio of  $\frac{5}{2}.$
+\end{proof}
+
+
+\subsection{Density Based Algorithm}
+
+\subsection{Sibling Based Algorithm}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\bibliography{bibliography}{}
+\bibliographystyle{plain}
+
+%----------------------------------------------------------------------------------------
+
+\end{multicols}
+
+\end{document}
+\grid
