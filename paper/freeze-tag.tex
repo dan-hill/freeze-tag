@@ -27,9 +27,11 @@
 % Introduction
 %-------------------------------------------------------------------------------
 \section{Introduction}
-The Freeze-Tag Problem (FTP) \cite{FTP.0} is a problem in the field of swarm robotics in which a strategy to awaken a swarm in the minimum makespan must be found. In the original problem as proposed in \cite{FTP.0}, robots have two states, sleeping and awake. Sleeping robots are awakened when touched by an awake robot. At the beginning of the problem we are given a set of sleeping robots and a single awake robot known as the \textit{source robot}. The source robot then awakens sleeping robots which then help awaken the other robots.
+The Freeze-Tag Problem (FTP) \cite{FTP.0} is a problem in the field of swarm robotics in which a strategy to awaken a swarm in the minimum makespan must be found. In the original problem as proposed in \cite{FTP.0}, robots have two states, sleeping and awake. Sleeping robots are awakened when touched by an awake robot. 
 
-In this paper we examine a variation of FTP \cite{FTP.1} in which each robot has a release time associated with it. Awake robots do not become aware of a sleeping robot's existence until it's release time has been met. We call this variation the Online Time Dependant Freeze-Tag Problem ( OTDFTP ).  
+At the beginning of the problem we are given a set of sleeping robots and a single awake robot known as the \textit{source robot}. The source robot then awakens sleeping robots which then help awaken the other robots. 
+
+The Online Time Dependant Freeze-Tag Problem (OTDFTP) is a variation of FTP in which each robot has a release time associated with it. The OTDFTP was first proposed by Hammar et al in \cite{FTP.1}. In the OTDFTP robots have an additional state we will refer to as \textit{hibernation mode}. When A robot is in hibernation mode, it is not visible to other robots. Once a hibernating robot's release time has been reached, it will enter sleep mode and become visible to awake robots. 
 
 \paragraph{Related Work.}
 Hammer et al. \cite{FTP.1} found the Offline Time Dependant Freeze Tag Problem has a lower bound of $7/3 - \epsilon$, for any $\epsilon > 0$. 
@@ -37,13 +39,13 @@ Hammer et al. \cite{FTP.1} found the Offline Time Dependant Freeze Tag Problem h
 In \cite{FTP.2}, Sztainberg et al. have proven a lower bound for the FTP using the nearest neighbor heuristic in which robots do not claim targets is at least $4-\epsilon$ times optimal for any $\epsilon > 0$\cite[Theorem ]{FTP.2}. The authors go on to find the strategy also has a tight approximation bound of $\Theta(\sqrt{\log n})$ for points on a plane and $\Theta((\log n)^{1-\frac{1}{d}})$ for points in $d$ dimensions.
 
 \paragraph{Preliminaries.}
-Let $R = \{r_0, r_1, r_2, \dots , r_n \} \subset M$ be the set of $n$ robots in some continuous metric space $M$. $M$ is a $d$-dimensional Euclidean space with distances measured according to an $L_p$ metric.
+Let $R = \{r_0, r_1, r_2, \dots , r_n \} \subset M$ be the set of $n$ robots in some continuous metric space $M$. $M$ is a $d$-dimensional Euclidean space with distances measured according to an $L_p$ metric.Unless otherwise stated, the robot $r_0$ is the \textit{source robot} and is the only awake robot at the beginning of the problem. 
 
-Unless otherwise stated, the robot $r_0$ is the \textit{source robot} and is the only robot that is not in sleep mode at the beginning of the problem. Each robot has 3 modes. In awake mode, a robot is fully functional and free to move. In sleep mode a robot is completely inactive and unable to be activated even if touched by an awake robot. Once the release time of a robot has been reached it enters \textit{wait mode} and awake robots can now sense it's position. In wait mode a robot is available for activation.
+Robots have three modes: \textit{awake mode}, \textit{sleep mode}, and \textit{hibernation mode}. In awake mode, a robot is fully functional and is free to move. In hibernation mode a robot is completely inactive and can not move nor be awakened by any external means. In sleep mode, a robot is inactive but can be awakened by other awake robots by being touched.
+
+Robots have a \textit{release time}. Once a robot's release time has passed, it will exit hibernation mode and enter sleep mode. This would be comparable to the real world example of a robot charging it's batteries and only becoming available to awaken once it's battery is full.
 
 In order to avoid robots from traveling in a single pack, awake robots can claim a target and no other robot will target a claimed robot. \cite{FTP.2}
-
-the OTDFTP can also be seen as a sequence of requests where $\sigma = (r, v)_1, (r, v)_2, \dots (r, v)_m$ is a set of locations of robots ordered by their release time and the makespan is the amount of time it takes for all requests in $sigma$ to be served.
 
 A solution to the OTDFTP is considered \textit{rational} if:
 \begin{enumerate}
@@ -57,7 +59,7 @@ We find that the competitive ratio of the Nearest Neighbor heuristic is $5/2$.
 %-------------------------------------------------------------------------------
 % Nearest Neighbor Algorithm
 %-------------------------------------------------------------------------------
-\section{Nearest Neighbor Algorithm}
+\section{The Algorithm}
 The Nearest Neighbor Algorithm is a \textit{rational} wake-up strategy for the OTDFTP. Each robot chooses the closest unclaimed robot in wait mode. Once a robot has chosen a target it will not choose another target until it has reached it's current target. 
 \begin{algorithm}[H]
   \caption{Returns the nearest unclaimed sleeping robot.}
@@ -93,7 +95,7 @@ The Nearest Neighbor Algorithm is a \textit{rational} wake-up strategy for the O
     \EndFunction
   \end{algorithmic}
 \end{algorithm}
-
+\section{Analysis}
 \begin{theorem}
 For any $\epsilon > 0$, there exists an instance of the OTDFTP for which the Nearest Neighbor Algorithm results in a makespan less than $\frac{5}{2} - \epsilon$ times optimal.
 \end{theorem}
@@ -103,7 +105,7 @@ For any $\epsilon > 0$, there exists an instance of the OTDFTP for which the Nea
 \tikzset{location/.style={circle, draw=blue, fill=white, thick, minimum size=.5cm}}
 \tikzset{active_robot/.style={circle, fill=black, minimum size=.5cm}}
 \centering
-	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
 		\node[location, label=below left:$p_0$]	(0)										{};
 		\node[location, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{};
 		\node[location, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{};
@@ -122,9 +124,9 @@ For any $\epsilon > 0$, there exists an instance of the OTDFTP for which the Nea
 	
 \end{figure}
 
-Let $G = {V, E}$ be the graph in Figure \ref{fig:1}. The source robot $r_0$ activates at vertex  $v_0$. At time $t = 0$ robot $r_1$ enters the sleeping state and is immediately awakened by $r_0$. At $t = 3$ $r_2$ enters sleeping state at $v_1$ and $r_3$ enters sleeping state at $v_2$. $r_0$ claims $r_2$ and begins moving down edge $(v_0, v_1)$. $r_1$ claims $r_3$ and begins moving down edge $(v_0, v_2)$. $r_0$ and $r_1$ arrive and awaken their respective targets at $t = 6$. At the same time $r_4$ enters sleeping state at $v_3$ and is claimed by $r_0$. $r_0$ travels down $(v_1, v_0)$ to $v_0$ then travels down $(v_0, v_3)$. $r_0$ arrives at $v_0$ at $t = 15$.
+Let $G = {V, E}$ be the graph in Figure \ref{fig:1}. The source robot $r_0$ activates at vertex  $v_0$. At time $t = 0$ robot $r_1$ enters the sleep mode and is immediately awakened by $r_0$. At $t = 3$ $r_2$ enters sleep mode at $v_1$ and $r_3$ enters sleep mode at $v_2$. $r_0$ claims $r_2$ and begins moving down edge $(v_0, v_1)$. $r_1$ claims $r_3$ and begins moving down edge $(v_0, v_2)$. $r_0$ and $r_1$ arrive and awaken their respective targets at $t = 6$. At the same time $r_4$ enters sleep mode at $v_3$ and is claimed by $r_0$. $r_0$ travels down $(v_1, v_0)$ to $v_0$ then travels down $(v_0, v_3)$. $r_0$ arrives at $v_0$ at $t = 15$.
 
-In the optimum solution, the source robot $r_0$ still starts at $v_0$ and awakens $r_1$ at $t = 0$. $r_0$ immediately moves down $(v_0, v_3)$ and $r_1$ moves down $(v_0, v_1)$. At $t = 3$, $r_1$ arrives at $v_1$ as $r_2$ and $r_3$ are entering sleeping state. $r_1$ immediately claims and awakens $r_2$ then claims $r_2$ and begins moving down $(v_1, v_2)$. $r_1$ arrives at $v_2$ and awakens $r_3$ at $t = 4$. At $t = 6$ $r_0$ arrives at $v_3$ as $r_4$ is entering sleep mode and immediately awakens it. 
+In the optimum solution, the source robot $r_0$ still starts at $v_0$ and awakens $r_1$ at $t = 0$. $r_0$ immediately moves down $(v_0, v_3)$ and $r_1$ moves down $(v_0, v_1)$. At $t = 3$, $r_1$ arrives at $v_1$ as $r_2$ and $r_3$ are entering sleep mode. $r_1$ immediately claims and awakens $r_2$ then claims $r_2$ and begins moving down $(v_1, v_2)$. $r_1$ arrives at $v_2$ and awakens $r_3$ at $t = 4$. At $t = 6$ $r_0$ arrives at $v_3$ as $r_4$ is entering sleep mode and immediately awakens it. 
 
 This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makespan of 6 for the optimal solution to Figure \ref{fig:1}. This gives us a competitive ratio of  $\frac{5}{2}$.
 \end{proof}
@@ -137,7 +139,7 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
         \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
         \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
         \centering
-        	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+        	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
         		\node[active_robot, label=below left:$p_0$]	(0)										{2};
         		\node[location, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{};
         		\node[location, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{};
@@ -154,13 +156,13 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
 
         	
     }%
-    \subfloat[][b]{
+    \subfloat[][$t=3$]{
         \tikzset{location/.style={circle, draw=black, fill=white, thick, minimum size=.5cm}}
         \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
         \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
         \centering
-        	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
-        		\node[active_robot, label=below left:$p_0$]	(0)										{};
+        	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
+        		\node[location, label=below left:$p_0$]	(0)										{};
         		\node[waiting_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{1};
         		\node[waiting_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{1};
         		\node[location, label=below:$p_3$]		(3) [below = 3cm of 0]{};
@@ -182,7 +184,7 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
             \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
             \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
             \centering
-            	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+            	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
             		\node[location, label=below left:$p_0$]	(0)										{};
             		\node[active_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{2};
             		\node[active_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{2};
@@ -200,29 +202,52 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
     
          
         }
-		\subfloat[][$t=15$]{
+		\subfloat[][$t=9$]{
             \tikzset{location/.style={circle, draw=black, fill=white, thick, minimum size=.5cm}}
             \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
             \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
             \centering
-            	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
-            		\node[location, label=below left:$p_0$]	(0)										{};
+            	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
+            		\node[active_robot, label=below left:$p_0$]	(0)										{1};
             		\node[active_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{2};
             		\node[active_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{1};
-            		\node[active_robot, label=below:$p_3$]		(3) [below = 3cm of 0]{2};
+            		\node[waiting_robot, label=below:$p_3$]		(3) [below = 3cm of 0]{1};
             	
             		\tikzset{mystyle/.style={-,double=black}}
             		\tikzset{travel_path/.style={->,double=black}} 
             		\tikzset{every node/.style={fill=white, scale=1}} 
             		\path 
             			(0)	edge [mystyle]					(1)
-            			(2) edge [travel_path]	node	{$3$} 	(0)
-            			(0) edge [mystyle] 	node   	{$6$} 	(3)
+            			(2) edge [mystyle]	node	{$3$} 	(0)
+            			(0) edge [travel_path] 	node   	{$6$} 	(3)
             			(1) edge [mystyle] 	node   	{$1$} 	(2);
             	\end{tikzpicture}
     
          
         }
+        \subfloat[][$t=15$]{
+                    \tikzset{location/.style={circle, draw=black, fill=white, thick, minimum size=.5cm}}
+                    \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
+                    \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
+                    \centering
+                    	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
+                    		\node[location, label=below left:$p_0$]	(0)										{};
+                    		\node[active_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{2};
+                    		\node[active_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{1};
+                    		\node[active_robot, label=below:$p_3$]		(3) [below = 3cm of 0]{2};
+                    	
+                    		\tikzset{mystyle/.style={-,double=black}}
+                    		\tikzset{travel_path/.style={->,double=black}} 
+                    		\tikzset{every node/.style={fill=white, scale=1}} 
+                    		\path 
+                    			(0)	edge [mystyle]					(1)
+                    			(2) edge [mystyle]	node	{$3$} 	(0)
+                    			(0) edge [mystyle] 	node   	{$6$} 	(3)
+                    			(1) edge [mystyle] 	node   	{$1$} 	(2);
+                    	\end{tikzpicture}
+            
+                 
+                }
         \caption{Illustration of the competitive ratio proof for the Nearest Neighbor algorithm.}
 \end{figure*}
 
@@ -233,7 +258,7 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
         \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
         \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
         \centering
-        	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+        	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
         		\node[active_robot, label=below left:$p_0$]	(0)										{2};
         		\node[location, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{};
         		\node[location, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{};
@@ -257,7 +282,7 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
         \tikzset{traveling_robot/.style={circle, draw=red, line width=1mm, minimum size=.2cm}}
         \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
         \centering
-        	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+        	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
         		\node[location, label=below left:$p_0$]	(0)										{};
         		\node[active_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{2};
         		\node[waiting_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{1};
@@ -283,7 +308,7 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
             \tikzset{traveling_robot/.style={circle, draw=red, line width=1mm, minimum size=.2cm}}
             \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
             \centering
-            	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+            	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
             		\node[location, label=below left:$p_0$]	(0)										{};
             		\node[active_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{1};
             		\node[active_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{2};
@@ -308,7 +333,7 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
                     \tikzset{active_robot/.style={circle, draw=red, line width=1mm, minimum size=.5cm}}
                     \tikzset{waiting_robot/.style={circle, draw=yellow, line width=1mm, minimum size=.5cm}}
                     \centering
-                    	\begin{tikzpicture}[scale=1, transform shape, label={t=0}]
+                    	\begin{tikzpicture}[scale=.5, transform shape, label={t=0}]
                     		\node[location, label=below left:$p_0$]	(0)										{};
                     		\node[active_robot, label=below left:$p_1$]	(1) [above left = 1.5cm and .5cm of 0]	{1};
                     		\node[active_robot, label=below right:$p_2$](2) [above right = 1.5cm and .5cm of 0]	{2};
@@ -330,21 +355,11 @@ This gives us a makespan of $15$ for the Nearest Neighbor algorithm and a makesp
 \end{figure*}
 
 
-\begin{multicols}{2}
-\subsection{Empirical Analysis}
-\subsubsection{Experiment Setup}
-The experiment is based on a Python 2.7.9 simulation of swarms of varying sizes where the robots are running an implementation of the Nearest Neighbor Algorithm. The simulations were performed on a 64-bit PC running Ubuntu Linux.
-\paragraph{Dataset.} The simulations are run with 210 different datasets consisting of varying numbers of robots randomly placed on a 10000x10000 2D Euclidean plane. The release time of each robot is a random number between 0 and 5000 time units.
-\paragraph{Performance Measure} The performance of the algorithm on the datasets is based solely on the makespan. 
+\begin{figure}[H]
+\centering
 
-\subsection{Experiment Results}
-\subsection{Conclusion}
-\subsection{Future Work}
-\end{multicols}
-
-\begin{figure}[h]
-\begin{tikzpicture}
-\begin{axis}[width=\textwidth,
+\begin{tikzpicture}[scale=1.3]
+\begin{axis}[
 scatter/classes={
     a={draw=black, mark=*, mark size=0.3}, b={draw=black}},
 xlabel={number of robots in swarm}, ylabel={time to wake swarm}]
@@ -603,7 +618,18 @@ x y label
 \end{tikzpicture}
 \end{figure}
 \begin{multicols}{2}
+\section{Experiment}
+\subsection{Experiment Setup}
+The experiment is based on a Python 2.7.9 simulation of swarms of varying sizes where the robots are running an implementation of the Nearest Neighbor Algorithm. The simulations were performed on a 64-bit PC running Linux OS.
+\paragraph{Dataset.} The simulations are run with 210 different geometric datasets consisting of increasing numbers of robots randomly placed on a $10000 \times 10000$ unit two dimensional Euclidean plane. The release time of each robot is a random number between 0 and 5000 time units. The source robot is the first robot placed on the plane.
+\paragraph{Parameters.} Robots were given a movement speed of 1 unit of geometric space per 1 unit of time.
+\paragraph{Performance Measure} The performance of the algorithm on the datasets is based solely on the makespan. 
 
+\subsection{Experiment Results}
+In our plot the horizontal axis corresponds to the number of robots in the swarm. The vertical axis corresponds with the makespan of the simulation. Small dots are the results of individual runs of the simulation and the large dots are the average of all runs for the given swarm size.
+
+\section{Future Work}
+It would be interesting to explore other heuristics for the OTDFTP as well as test other dataset types such as grid swarm arrangement using the Nearest Neighbor algorithm.
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
